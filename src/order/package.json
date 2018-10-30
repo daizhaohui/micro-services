@@ -13,7 +13,6 @@
   "license": "ISC",
   "dependencies": {
     "seneca": "^3.7.0",
-    "seneca-basic": "^0.6.0",
     "seneca-entity": "^2.3.0",
     "seneca-mongo-store": "^1.4.0"
   }

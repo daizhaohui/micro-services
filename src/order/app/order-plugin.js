@@ -1,7 +1,7 @@
 var emailService = require('seneca')().client({
-    host: "127.0.0.1",
-    prot: 8001
-});
+    type: 'tcp',
+    port: 8001
+}).use('entity');
 
 module.exports = function (options) {
     var seneca = this;
@@ -31,7 +31,7 @@ module.exports = function (options) {
     seneca.add({
         area: "orders",
         action: "create"
-    }, (err, done) => {
+    }, (args, done) => {
         var products = args.products;
         var total = 0.0;
         products.forEach(product => {

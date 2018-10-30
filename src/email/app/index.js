@@ -1,8 +1,8 @@
 var seneca = require('seneca')();
 var plugin = require('./email-plugin');
 
-seneca.use(plugin);
+seneca.use(plugin).use("entity");
 seneca.listen({
-    host: "127.0.0.1",
+    type: 'tcp',
     port: 8001
 });

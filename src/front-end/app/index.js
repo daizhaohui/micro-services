@@ -2,10 +2,6 @@ var app = require("express")();
 var seneca = require('seneca')();
 var web = require('seneca-web');
 
-var emailService = require("seneca")().client({
-    type: 'tcp',
-    port: 8001
-}).use('entity');
 var productService = require("seneca")().client({
     type: 'tcp',
     port: 8002
@@ -75,7 +71,7 @@ const api = function (options) {
         area: "ui",
         action: "createorder"
     }, (args, done) => {
-        var orderInfo = args.args.body;
+        var orderInfo = JSON.parse(args.args.body);
         productService.act({
             area: "product",
             action: "fetch",

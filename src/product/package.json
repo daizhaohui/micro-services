@@ -16,7 +16,6 @@
     "debug": "^4.1.0",
     "express": "^4.16.4",
     "seneca": "^3.7.0",
-    "seneca-basic": "^0.6.0",
     "seneca-entity": "^2.3.0",
     "seneca-mongo-store": "^1.4.0",
     "seneca-web": "^2.2.1",

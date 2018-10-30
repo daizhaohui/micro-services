@@ -1,7 +1,7 @@
 var seneca = require("seneca")();
 var plugin = require("./product-plugin");
 
-seneca.use(plugin).use('basic').use('entity')
+seneca.use(plugin).use('entity')
     .use("mongo-store", {
         name: "product",
         host: "localhost",
