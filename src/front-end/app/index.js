@@ -75,7 +75,7 @@ const api = function (options) {
         area: "ui",
         action: "createorder"
     }, (args, done) => {
-        var orderInfo = args.body;
+        var orderInfo = args.args.body;
         productService.act({
             area: "product",
             action: "fetch",
@@ -83,7 +83,7 @@ const api = function (options) {
             id: orderInfo.id
         }, (err, product) => {
             if (err) done(err, null);
-            order.act({
+            orderService.act({
                 area: "orders",
                 action: "create",
                 products: [product],

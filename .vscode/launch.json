@@ -3,7 +3,9 @@
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": [{
+    "configurations": [
+
+        {
             "type": "node",
             "request": "launch",
             "name": "micro-service-product",
@@ -14,6 +16,11 @@
             "request": "launch",
             "name": "micro-service-front-end",
             "program": "${workspaceFolder}/src/front-end/app/index.js"
+        }, {
+            "type": "node",
+            "request": "launch",
+            "name": "micro-service-order",
+            "program": "${workspaceFolder}/src/order/app/index.js"
         }
     ]
 }
