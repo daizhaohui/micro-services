@@ -1,0 +1,20 @@
+{
+  "name": "seneca-koa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.2",
+    "koa": "^2.6.1",
+    "koa-body": "^4.0.4",
+    "koa-router": "^7.4.0",
+    "seneca": "^3.7.0",
+    "seneca-web": "^2.2.1",
+    "seneca-web-adapter-koa2": "^1.1.0"
+  }
+}

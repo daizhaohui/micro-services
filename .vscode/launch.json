@@ -21,6 +21,12 @@
             "request": "launch",
             "name": "micro-service-order",
             "program": "${workspaceFolder}/src/order/app/index.js"
+        }, {
+            "type": "node",
+            "request": "launch",
+            "name": "micro-service-koa",
+            "program": "${workspaceFolder}/src/seneca-koa/index.js"
         }
     ]
+]
 }
